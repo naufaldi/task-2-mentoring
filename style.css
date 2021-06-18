@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(images/bg-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  margin: auto;
+}
+header {
+  margin: auto;
+  padding-top: 30px;
+  margin-left: 60px;
+}
+.logo {
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+/* animasi logo */
+@keyframes example {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 60px;
+  object-fit: contain;
+}
+.container-content {
+  padding: 40px;
+  margin-bottom: 180px;
+}
+.container-content h1 {
+  width: 100%;
+  font-size: 3rem;
+  font-family: "poppins";
+  text-align: left;
+  padding: 20px auto 20px auto;
+}
+.container-content p {
+  font-family: "Open Sans";
+  font-size: 1em;
+  line-height: 1.5em;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+button {
+  padding: 15px 60px 15px 60px;
+  border: none;
+  border-radius: 60px;
+  background-color: white;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: hsl(257, 40%, 49%);
+  box-shadow: 0 1px 2px 3px hsl(257, 40%, 49%);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(300, 69%, 71%);
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 1px 4px 2px hsl(257, 40%, 49%);
+}
+footer {
+  display: flex;
+  justify-content: flex-end;
+  margin: auto 30px 60px;
+}
+i {
+  color: white;
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 60px;
+}
+i:hover {
+  border-color: hsl(300, 69%, 71%);
+  cursor: pointer;
+  color: hsl(300, 69%, 71%);
+  box-shadow: 0 1px 4px 2px hsl(257, 40%, 49%);
+}
+a {
+  text-decoration: none;
+  padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  header {
+    margin: 0 1.5rem;
+  }
+  body {
+    background-image: url(../images/bg-mobile.svg);
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0 auto 12px;
+  }
+  .container-image img {
+    margin: 0;
+    padding: 0;
+  }
+  .container-content {
+    margin: 0 auto;
+  }
+  .container-content h1 {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .container-content p {
+    text-align: center;
+  }
+  button {
+    margin: auto 200px;
+  }
+  footer {
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px 40px;
+  }
+}
+@media screen and (max-width: 520px) {
+  header {
+    margin: 0 60px;
+    width: 50%;
+  }
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+  .container-image img {
+    width: 80%;
+    margin-left: 40px;
+  }
+  .container-content {
+    margin: 0;
+  }
+  .container-content h1 {
+    margin: 0 auto;
+    width: 70%;
+    font-size: 2.2rem;
+  }
+  .container-content p {
+    margin: 0 auto;
+    width: 50%;
+    margin-bottom: 40px;
+  }
+  .ri-2x {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 375px) {
+  header {
+    margin: 0 3rem;
+  }
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+  .container-image img {
+    margin: 25px 40px 0 40px;
+  }
+  .container-content h1 {
+    width: 40%;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  footer {
+    margin-top: 80px;
+  }
+  .ri-2x {
+    font-size: 0.9em;
+  }
+}
